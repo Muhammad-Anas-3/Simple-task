@@ -48,24 +48,23 @@ export default function App() {
   ];
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-[#BFC8E5]">
-      <div className="bg-white p-16 rounded-lg shadow-lg max-w-[1200px] m-10">
+    <div className="min-h-screen flex items-center justify-center bg-[#BFC8E6]">
+      <div className="bg-white lg:p-16 p-8 rounded-lg shadow-lg max-w-[1200px] sm:m-10">
         <div className="mb-4">
           <h2 className="text-2xl font-semibold font-merriweather">Users</h2>
-          <div className="flex justify-between mt-2 font-poppins font-normal min-w-96 w-full lg:flex-row flex-col gap-2">
+          <div className="flex flex-col justify-between mt-2 font-poppins font-normal w-full lg:flex-row gap-2">
             <label
               htmlFor="text"
-              className="p-2 border rounded w-full flex items-center gap-2 max-w-72"
+              className="p-2 border rounded w-full flex items-center gap-2 flex-[30%]"
             >
               <img src={SearchSvg} alt="Search" className="text-[32px]" />
-
               <input
                 type="text"
                 placeholder="Search users"
-                className="outline-none"
+                className="outline-none w-full"
               />
             </label>
-            <div className="flex gap-2 text-[#151B32]">
+            <div className="flex lg:justify-end gap-2 lg:flex-row flex-col justify-center text-[#151B32] flex-[55%]">
               <button className="px-3 py-2 rounded">Reputation</button>
               <button className="px-3 py-2 bg-[#849FFF] text-white rounded-lg">
                 New Users
@@ -76,7 +75,7 @@ export default function App() {
             </div>
           </div>
         </div>
-        <div className="flex justify-between items-center flex-wrap mt-10">
+        <div className="flex justify-center lg:justify-between items-center flex-wrap mt-10">
           {users.map((user, index) => (
             <UserCard
               key={index}

@@ -2,7 +2,7 @@
 const UserCard = ({ user, border }) => {
   return (
     <div
-      className={`bg-[#FBFCFF] rounded-xl p-3 flex gap-3 justify-start min-w-80 min-h-52 mb-10 ${border}`}
+      className={`bg-[#FBFCFF] rounded-xl sm:p-3 flex gap-3 justify-start sm:min-w-80 min-h-52 mb-10 ${border}`}
     >
       <img
         src={user.avatar}
